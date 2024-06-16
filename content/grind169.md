@@ -11,10 +11,3 @@ avatar = "/images/avatar.webp"
 
 +++
 
-1. [Two Sum](https://leetcode.com/problems/two-sum/description/): 
-
-   Can use 
-
-2. d
-
-   
