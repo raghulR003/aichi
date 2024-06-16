@@ -171,7 +171,46 @@ Output: [0]
 ```
 
 ```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode dummy = new ListNode(0); // Dummy node to start the merged list
+        ListNode current = dummy;  // Pointer to traverse the merged list
 
+        // Handle empty list cases (you had this right!)
+        if (list1 == null) {
+            return list2;
+        } else if (list2 == null) {
+            return list1;
+        }
+
+        // Iterate until both lists are exhausted
+        while (list1 != null && list2 != null) {
+            if (list1.val < list2.val) {
+                current.next = new ListNode(list1.val); // Create new node
+                list1 = list1.next;
+            } else {
+                current.next = new ListNode(list2.val); 
+                list2 = list2.next;
+            }
+            current = current.next; // Move to the next node in the merged list
+        }
+
+        // Add any remaining nodes from list1 or list2
+        current.next = (list1 != null) ? list1 : list2;
+
+        return dummy.next; // Return the head of the merged list
+    }
+}
 ```
 
 ------
