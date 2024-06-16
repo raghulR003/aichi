@@ -11,7 +11,7 @@ avatar = "/images/avatar.webp"
 
 +++
 
-Here is the link to the original Grind75 if you want to check it out: [Grind75](https://www.techinterviewhandbook.org/grind75?weeks=26&hours=40)
+> [**Grind75**](https://www.techinterviewhandbook.org/grind75?weeks=26&hours=40) - Click to view the original site.
 
 ------
 
