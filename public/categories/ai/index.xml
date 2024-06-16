@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>aichi.</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on aichi.</description>
+    <title>Ai on aichi.</title>
+    <link>http://localhost:1313/categories/ai/</link>
+    <description>Recent content in Ai on aichi.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Jun 2024 11:45:38 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I built a nonsense energy management solution and almost got away with it</title>
       <link>http://localhost:1313/buildinglevels/</link>
       <pubDate>Sun, 16 Jun 2024 11:45:38 +0530</pubDate>
       <guid>http://localhost:1313/buildinglevels/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>Things I learnt while grinding: The Grind75 Edition</title>
-      <link>http://localhost:1313/grind169/</link>
-      <pubDate>Sun, 16 Jun 2024 10:21:32 +0530</pubDate>
-      <guid>http://localhost:1313/grind169/</guid>
-      <description>Here is the link to the original Grind75 if you want to check it out: Grind75</description>
     </item>
   </channel>
 </rss>

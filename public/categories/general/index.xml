@@ -6,14 +6,6 @@
     <description>Recent content in General on aichi.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Jun 2024 10:21:32 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/general/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Grind75</title>
-      <link>http://localhost:1313/grind169/</link>
-      <pubDate>Sun, 16 Jun 2024 10:21:32 +0530</pubDate>
-      <guid>http://localhost:1313/grind169/</guid>
-      <description> Question Tag Link Two Sum Easy, Done https://leetcode.com/problems/two-sum/description/ </description>
-    </item>
   </channel>
 </rss>
