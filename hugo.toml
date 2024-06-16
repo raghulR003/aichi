@@ -1,6 +1,6 @@
-baseURL = 'https://hugoblogapp.com'
+baseURL = 'https://aichi.onrender.com/'
 languageCode = 'en-us'
-title = 'Lama dev blog'
+title = 'aichi.'
 
 paginate = 4
 
