@@ -18,6 +18,7 @@ avatar = "/images/avatar.webp"
 # Contents
  - [Two Sum](#two-sum) 
  - [Valid Parentheses](#valid-parantheses)
+ - [Merge Sorted Lists](#merge-sorted-lists)
 
 ------
 
@@ -141,7 +142,9 @@ class Solution {
 
 
 
-## ## Merge Two Sorted Lists:
+## Merge Two Sorted Lists:
+
+####merge-sorted-lists
 
 You are given the heads of two sorted linked lists `list1` and `list2`.
 
