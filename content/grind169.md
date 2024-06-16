@@ -207,4 +207,172 @@ class Solution {
 
 
 
-## 
+## Best time to buy and sell stock:
+
+You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day.
+
+You want to maximize your profit by choosing a **single day** to buy one stock and choosing a **different day in the future** to sell that stock.
+
+Return *the maximum profit you can achieve from this transaction*. If you cannot achieve any profit, return `0`.
+
+**Example 1:**
+
+```
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+```
+
+**Example 2:**
+
+```
+Input: prices = [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transactions are done and the max profit = 0.
+```
+
+```java
+class Solution {
+    public int maxProfit(int[] prices) {
+        int max=0, min=Integer.MAX_VALUE;
+        for(int i=0;i<prices.length;i++){
+            if(prices[i]<min) min=prices[i];
+            else if(prices[i]>min) max=Math.max(prices[i]-min,max);
+        }
+        return max;
+    }
+}
+```
+
+------
+
+
+
+## Valid Palindrome:
+
+A phrase is a **palindrome** if, after converting all  uppercase letters into lowercase letters and removing all  non-alphanumeric characters, it reads the same forward and backward.  Alphanumeric characters include letters and numbers.
+
+Given a string `s`, return `true` *if it is a **palindrome**, or* `false` *otherwise*.
+
+ 
+
+**Example 1:**
+
+```
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome.
+```
+
+**Example 2:**
+
+```
+Input: s = "race a car"
+Output: false
+Explanation: "raceacar" is not a palindrome.
+```
+
+**Example 3:**
+
+```
+Input: s = " "
+Output: true
+Explanation: s is an empty string "" after removing non-alphanumeric characters.
+Since an empty string reads the same forward and backward, it is a palindrome.
+```
+
+```Java
+class Solution {
+    public boolean isPalindrome(String s) {
+        int i = 0, j = s.length() - 1;
+        while (i < j) {
+            // Skip non-alphanumeric characters from the left
+            while (i < j && !Character.isLetterOrDigit(s.charAt(i))) {
+                i++;
+            }
+            // Skip non-alphanumeric characters from the right
+            while (i < j && !Character.isLetterOrDigit(s.charAt(j))) {
+                j--;
+            }
+            // Compare characters (case-insensitive)
+            if (Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(j))) {
+                return false;
+            } else {
+                i++;
+                j--;
+            }
+        }
+        return true;
+    }
+}
+```
+
+------
+
+
+
+## Invert Binary Tree:
+
+Given the `root` of a binary tree, invert the tree, and return *its root*.
+
+**Example 1:**
+
+![img](https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg)
+
+```
+Input: root = [4,2,7,1,3,6,9]
+Output: [4,7,2,9,6,3,1]
+```
+
+**Example 2:**
+
+![img](https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg)
+
+```
+Input: root = [2,1,3]
+Output: [2,3,1]
+```
+
+**Example 3:**
+
+```
+Input: root = []
+Output: []
+```
+
+```Java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+        
+        TreeNode temp = root.left;
+        root.left = invertTree(root.right);
+        root.right = invertTree(temp);
+        
+        return root;
+    }
+}
+```
+
+------
+
+
+
