@@ -15,20 +15,11 @@ avatar = "/images/avatar.webp"
 
 ------
 
-# Contents
- - [Two Sum](#two-sum) 
- - [Valid Parentheses](#valid-parantheses)
- - [Merge Sorted Lists](#merge-sorted-lists)
-
-------
-
 
 
 ## Two Sum:
 
-####two-sum
-
-Given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*.You may assume that each input would have **exactly** one solution, and you may not use the *same* element twice.You can return the answer in any order.
+Given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*.You may assume that each input would have **exactly** one solution, and you may not use the *same* element twice. You can return the answer in any order.
 
 **Example 1:**
 
@@ -72,8 +63,6 @@ class Solution {
 
 
 ## Valid Parentheses:
-
-####valid-parantheses
 
 Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
 
@@ -143,8 +132,6 @@ class Solution {
 
 
 ## Merge Two Sorted Lists:
-
-####merge-sorted-lists
 
 You are given the heads of two sorted linked lists `list1` and `list2`.
 
@@ -218,3 +205,6 @@ class Solution {
 
 ------
 
+
+
+## 
