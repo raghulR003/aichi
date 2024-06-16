@@ -11,13 +11,7 @@
     <loc>http://localhost:1313/authors/</loc>
     <lastmod>2024-06-16T11:45:38+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/build-stuff/</loc>
-    <lastmod>2024-06-16T11:45:38+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-06-16T11:45:38+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/coding/</loc>
     <lastmod>2024-06-16T11:45:38+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/buildinglevels/</loc>
@@ -29,11 +23,16 @@
     <loc>http://localhost:1313/authors/raghul/</loc>
     <lastmod>2024-06-16T11:45:38+05:30</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/coding/</loc>
+    <lastmod>2024-06-16T10:21:32+05:30</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/placement/</loc>
     <lastmod>2024-06-16T10:21:32+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/grind169/</loc>
     <lastmod>2024-06-16T10:21:32+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/build-stuff/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/general/</loc>
   </url>

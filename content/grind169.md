@@ -5,7 +5,7 @@ draft = false
 description = "There isn't much right now, cuz I've just started."
 image = "/images/grind.png"
 imageBig = "/images/grind.png"
-categories = ["coding","placement",""]
+categories = ["coding","placement"]
 authors = ["Raghul"]
 avatar = "/images/avatar.webp"
 

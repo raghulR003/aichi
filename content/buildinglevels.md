@@ -5,7 +5,7 @@ draft = false
 description = "I turned more crap into less crap! How cool is that??"
 image = ""
 imageBig = ""
-categories = ["coding","ai","build-stuff","iot"]
+categories = ["ai","iot"]
 authors = ["Raghul"]
 avatar = "/images/avatar.webp"
 
