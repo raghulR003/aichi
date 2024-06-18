@@ -376,3 +376,118 @@ class Solution {
 
 
 
+## Binary Search:
+
+Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search `target` in `nums`. If `target` exists, then return its index. Otherwise, return `-1`.
+
+You must write an algorithm with `O(log n)` runtime complexity.
+
+ 
+
+**Example 1:**
+
+```
+Input: nums = [-1,0,3,5,9,12], target = 9
+Output: 4
+Explanation: 9 exists in nums and its index is 4
+```
+
+**Example 2:**
+
+```
+Input: nums = [-1,0,3,5,9,12], target = 2
+Output: -1
+Explanation: 2 does not exist in nums so return -1
+```
+
+```java
+class Solution {
+    public int search(int[] nums, int target) {
+        int i=0,j=nums.length-1;
+        while(i<=j){
+            int avg=(i+j)/2;
+            if(nums[avg]>target){
+                j=avg-1;
+            }else if(nums[avg]<target){
+                i=avg+1;
+            }else{
+                return avg;
+            }
+        }
+        return -1;
+    }
+}
+```
+
+---
+
+
+
+## Valid Anagram:
+
+Given two strings `s` and `t`, return `true` *if* `t` *is an anagram of* `s`*, and* `false` *otherwise*.
+
+An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the  original letters exactly once.
+
+ 
+
+**Example 1:**
+
+```
+Input: s = "anagram", t = "nagaram"
+Output: true
+```
+
+**Example 2:**
+
+```
+Input: s = "rat", t = "car"
+Output: false
+```
+
+```java
+// Approach 1: Using in-built sorting method
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        char[] sChars = s.toCharArray();
+        char[] tChars = t.toCharArray();
+        
+        Arrays.sort(sChars);
+        Arrays.sort(tChars);
+        
+        return Arrays.equals(sChars, tChars);
+    }
+}
+
+//Approach 2: Hash Map
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        Map<Character, Integer> count = new HashMap<>();
+        
+        // Count the frequency of characters in string s
+        for (char x : s.toCharArray()) {
+            count.put(x, count.getOrDefault(x, 0) + 1);
+        }
+        
+        // Decrement the frequency of characters in string t
+        for (char x : t.toCharArray()) {
+            count.put(x, count.getOrDefault(x, 0) - 1);
+        }
+        
+        // Check if any character has non-zero frequency
+        for (int val : count.values()) {
+            if (val != 0) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+}
+```
+
+---
+
+
+
+## 
