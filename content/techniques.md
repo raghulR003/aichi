@@ -11,7 +11,7 @@ avatar = "/images/avatar.webp"
 
 +++
 
-### Find the number of digits in a number - Optimal Solution:
+### Find the number of digits in a number - Optimal Solution :
 
 The logarithmic base 10 of a positive integers gives the number of  digits in n. We add 1 to the result to ensure that the count is correct  even for numbers that are powers of 10.
 
@@ -25,3 +25,17 @@ public class pattern9 {
 }
 ```
 
+### Finding the signed right shift (by 1,2,3...) :
+
+So, for a decimal number (ex: 120), the values will be the integer division by 2 at each consecutive step. If the number is less than 4, then the value is **1**.
+
+```markdown
+120 >> 1 = 60
+60 >> 1 == 120 >> 2 == 30
+30 >> 1 == 60 >> 2 === 120 >>3 ==15
+and so on....
+```
+
+### Fastest way to check if a number is odd or even (while having access to code env) :
+
+To do that, run the number in a Boolean declaration as ( x & 1 ), if the result is **True**, the number is **Odd** and if it's **False**, then it's **Even**.
