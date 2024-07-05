@@ -3,9 +3,9 @@ title = 'Tricks'
 date = 2024-07-04T07:55:28+05:30
 draft = false
 description = "A compilation of tricks I learnt while coding"
-image = ""
-imageBig = ""
-categories = ["general"]
+image = "/images/tricks_big.png"
+imageBig = "/images/tricks_bigg.jpg"
+categories = ["general", "coding","tricks"]
 authors = ["Raghul"]
 avatar = "/images/avatar.webp"
 
