@@ -6,21 +6,14 @@
     <description>Recent content on aichi.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Jun 2024 11:45:38 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2024 20:34:40 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How I built a nonsense energy management solution and almost got away with it</title>
-      <link>http://localhost:1313/buildinglevels/</link>
-      <pubDate>Sun, 16 Jun 2024 11:45:38 +0530</pubDate>
-      <guid>http://localhost:1313/buildinglevels/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Solving Grind 169 List: A Primer</title>
-      <link>http://localhost:1313/grind169/</link>
-      <pubDate>Sun, 16 Jun 2024 10:21:32 +0530</pubDate>
-      <guid>http://localhost:1313/grind169/</guid>
-      <description>Grind75 - Click to view the original site.</description>
+      <title>Netmarc: Personal Indexes on the Internet</title>
+      <link>http://localhost:1313/programmablesearchengine/</link>
+      <pubDate>Mon, 26 Aug 2024 20:34:40 +0530</pubDate>
+      <guid>http://localhost:1313/programmablesearchengine/</guid>
+      <description>Explore the project live: https://netmarc.vercel.app/&#xA;NetMarc is a powerful, customizable tool designed to tailor your search experience based on your needs. Whether you&amp;rsquo;re a student, a developer, a business professional, or just browsing the web, NetMarc provides a focused and efficient way to find the information you need.&#xA;The Tech Stack Frontend (Vercel): The user interface is built with ReactJS, a popular JavaScript library known for its component-based architecture and efficient rendering.</description>
     </item>
   </channel>
 </rss>

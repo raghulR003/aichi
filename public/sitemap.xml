@@ -2,34 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/ai/</loc>
-    <lastmod>2024-06-16T11:45:38+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-06-16T11:45:38+05:30</lastmod>
+    <lastmod>2024-08-26T20:34:40+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/authors/</loc>
-    <lastmod>2024-06-16T11:45:38+05:30</lastmod>
+    <lastmod>2024-08-26T20:34:40+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/azure/</loc>
+    <lastmod>2024-08-26T20:34:40+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-06-16T11:45:38+05:30</lastmod>
+    <lastmod>2024-08-26T20:34:40+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/buildinglevels/</loc>
-    <lastmod>2024-06-16T11:45:38+05:30</lastmod>
+    <loc>http://localhost:1313/programmablesearchengine/</loc>
+    <lastmod>2024-08-26T20:34:40+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/iot/</loc>
-    <lastmod>2024-06-16T11:45:38+05:30</lastmod>
+    <loc>http://localhost:1313/categories/projects/</loc>
+    <lastmod>2024-08-26T20:34:40+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/authors/raghul-r/</loc>
+    <lastmod>2024-08-26T20:34:40+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/reactjs/</loc>
+    <lastmod>2024-08-26T20:34:40+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/authors/raghul/</loc>
-    <lastmod>2024-06-16T11:45:38+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/coding/</loc>
-    <lastmod>2024-06-16T10:21:32+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/placement/</loc>
-    <lastmod>2024-06-16T10:21:32+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/grind169/</loc>
-    <lastmod>2024-06-16T10:21:32+05:30</lastmod>
   </url>
 </urlset>

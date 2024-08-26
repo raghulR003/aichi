@@ -16,13 +16,39 @@
       </div>
       <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
     </div>
-    <img src={{ .Params.imageBig }} alt={{.Title}} class="singleHeadImg">
+    <img src={{ .Params.imageBig }} alt="{{.Title}}" class="singleHeadImg">
   </div>
   <div class="singleBottom">
-    <div class="singleContent">{{ .Content }}</div>
+    <div class="singleContent"> <!-- Main content container -->
+      {{ .Content }}
+    </div>
     <div class="singleRightBar">
       {{ partial "rightBar" .}}
     </div>
   </div>
 </div>
+
+<style>
+  .singleContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .singleBottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* Optional: Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .singleBottom {
+      flex-direction: column; /* Stack content and right bar vertically */
+    }
+  }
+</style>
 {{ end }}

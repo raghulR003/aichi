@@ -6,34 +6,27 @@
     <description>Recent content in Categories on aichi.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Jun 2024 11:45:38 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2024 20:34:40 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ai</title>
-      <link>http://localhost:1313/categories/ai/</link>
+      <title>Azure</title>
+      <link>http://localhost:1313/categories/azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/ai/</guid>
+      <guid>http://localhost:1313/categories/azure/</guid>
       <description></description>
     </item>
     <item>
-      <title>Iot</title>
-      <link>http://localhost:1313/categories/iot/</link>
+      <title>Projects</title>
+      <link>http://localhost:1313/categories/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/iot/</guid>
+      <guid>http://localhost:1313/categories/projects/</guid>
       <description></description>
     </item>
     <item>
-      <title>Coding</title>
-      <link>http://localhost:1313/categories/coding/</link>
+      <title>Reactjs</title>
+      <link>http://localhost:1313/categories/reactjs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/coding/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Placement</title>
-      <link>http://localhost:1313/categories/placement/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/placement/</guid>
+      <guid>http://localhost:1313/categories/reactjs/</guid>
       <description></description>
     </item>
   </channel>

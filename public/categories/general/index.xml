@@ -6,6 +6,21 @@
     <description>Recent content in General on aichi.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 23 Aug 2024 08:58:20 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NLP - Additional Content</title>
+      <link>http://localhost:1313/nlp/</link>
+      <pubDate>Fri, 23 Aug 2024 08:58:20 +0530</pubDate>
+      <guid>http://localhost:1313/nlp/</guid>
+      <description>Key differences between HMM, MaxEnt, and CRF for POS tagging:&#xA;Feature HMM (Hidden Markov Model) MaxEnt (Maximum Entropy) CRF (Conditional Random Field) Type Generative Discriminative Discriminative Principle Models the joint probability of the POS tag sequence and the word sequence Predicts the probability of a POS tag given the word and its context Models the conditional probability of the POS tag sequence given the word sequence Dependencies Considers dependencies between adjacent POS tags Considers features of the word and its context, but not explicit dependencies between tags Considers dependencies between adjacent POS tags and features of the entire sequence Strengths Simple and efficient Can handle a large number of features Captures dependencies between tags and can incorporate rich features Weaknesses Limited ability to incorporate complex features Doesn&amp;rsquo;t explicitly model dependencies between tags Can be computationally expensive to train Training Uses transition and emission probabilities estimated from training data Learns weights for features to maximize entropy Learns weights for features to maximize the conditional probability of the tag sequence Example Assumes that the probability of a noun following a determiner is high Might learn that words ending in &amp;ldquo;-ly&amp;rdquo; are likely adverbs Might learn that a sequence of &amp;ldquo;DET N V&amp;rdquo; is more likely than &amp;ldquo;DET V N&amp;rdquo; In essence:</description>
+    </item>
+    <item>
+      <title>Tricks</title>
+      <link>http://localhost:1313/techniques/</link>
+      <pubDate>Thu, 04 Jul 2024 07:55:28 +0530</pubDate>
+      <guid>http://localhost:1313/techniques/</guid>
+      <description>Find the number of digits in a number - Optimal Solution : The logarithmic base 10 of a positive integers gives the number of digits in n. We add 1 to the result to ensure that the count is correct even for numbers that are powers of 10.&#xA;public class pattern9 { public static void main(String args[]){ int n = 89765; int val = (int)(Math.log10(n))+1; System.out.print(&amp;#34;For &amp;#34;+n+&amp;#34; the number of digits is: &amp;#34;+val); } } Finding the signed right shift (by 1,2,3&amp;hellip;) : So, for a decimal number (ex: 120), the values will be the integer division by 2 at each consecutive step.</description>
+    </item>
   </channel>
 </rss>

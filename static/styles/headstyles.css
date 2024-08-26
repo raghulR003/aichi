@@ -1,0 +1,26 @@
+.singleContent {
+  max-width: 800px;  /* Limit the content width for better readability */
+  margin: 0 auto;    /* Center the content horizontally */
+  padding: 20px;     /* Add padding for spacing around the content */
+  line-height: 1.6;  /* Improve line height for readability */
+  background-color: #fff; /* Optional: Set a background color for the content area */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.singleBottom {
+  display: flex; /* Ensures the content and right bar are displayed side by side */
+  flex-wrap: wrap; /* Makes sure the layout adapts on smaller screens */
+  gap: 20px; /* Adds space between the content and right bar */
+}
+@media (max-width: 768px) {
+  .singleBottom {
+      flex-direction: column; /* Stacks the content and right bar on top of each other */
+      gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .singleContent {
+      max-width: 100%; /* Allow the content to take full width on smaller screens */
+      padding: 15px;   /* Adjust padding for smaller screens */
+  }
+}
