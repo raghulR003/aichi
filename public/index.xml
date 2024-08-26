@@ -15,5 +15,19 @@
       <guid>http://localhost:1313/programmablesearchengine/</guid>
       <description>Explore the project live: https://netmarc.vercel.app/&#xA;NetMarc is a powerful, customizable tool designed to tailor your search experience based on your needs. Whether you&amp;rsquo;re a student, a developer, a business professional, or just browsing the web, NetMarc provides a focused and efficient way to find the information you need.&#xA;The Tech Stack Frontend (Vercel): The user interface is built with ReactJS, a popular JavaScript library known for its component-based architecture and efficient rendering.</description>
     </item>
+    <item>
+      <title>Building DBola for rapid prototyping database applications</title>
+      <link>http://localhost:1313/writingdbola/</link>
+      <pubDate>Sat, 06 Jul 2024 18:15:07 +0530</pubDate>
+      <guid>http://localhost:1313/writingdbola/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tricks</title>
+      <link>http://localhost:1313/techniques/</link>
+      <pubDate>Thu, 04 Jul 2024 07:55:28 +0530</pubDate>
+      <guid>http://localhost:1313/techniques/</guid>
+      <description>Find the number of digits in a number - Optimal Solution : The logarithmic base 10 of a positive integers gives the number of digits in n. We add 1 to the result to ensure that the count is correct even for numbers that are powers of 10.&#xA;public class pattern9 { public static void main(String args[]){ int n = 89765; int val = (int)(Math.log10(n))+1; System.out.print(&amp;#34;For &amp;#34;+n+&amp;#34; the number of digits is: &amp;#34;+val); } } Finding the signed right shift (by 1,2,3&amp;hellip;) : So, for a decimal number (ex: 120), the values will be the integer division by 2 at each consecutive step.</description>
+    </item>
   </channel>
 </rss>
