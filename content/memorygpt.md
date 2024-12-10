@@ -10,9 +10,15 @@ authors = ["Raghul"]
 avatar = "/images/avatar.webp"
 +++
 
-## A Rough Idea - 
-Here is the concept architecture diagram for the proposed solution.
+## Inception - 
+
+The problem I want to solve is to provide a very accessible approach to using low context-length'd models to their fullest efficiency, which in addition will also probably solve the attention issues arising in LLMs, where the model "convieniently" forgets information due to increased length of information being input.
+
+To note that this might not be a novel approach, and that there might be better solutions already available, in established papers and implementations. This post is to discuss the various approaches one can devise in utilizing a model's context space.
+
+Here is a rough draft of the system I'm proposing:
+
 ![Langchain Concept Architecture](/images/langchain_context/concept_arch.png)
 
-## Links - 
+## References - 
 [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/pdf/2307.03172)
