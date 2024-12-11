@@ -22,7 +22,7 @@ Here is a rough draft of the system I'm proposing:
 
 To put it in words, the query being provided by the user, on decomposing into tokens for use by the LLM will be associated with a context token set. Visualize a toffee in your hands, it is of two seperate items: one is the toffee itself, and the wrapper in which the toffee was encased. Using that analogy, the context tokens are the ones wrapping around the query token here; the decomposed query will be associated with appropriate information which will help us have the response stay in context.
 
-The response will be validated (in reference of the discussion here: <u>[RAG CONTROL FLOW](https://github.com/mistralai/cookbook/tree/main/third_party/langchain))</u>, and this proposed architecture from the paper is a good view of the validator procedure for reducing hallucinations on the response provided.
+The response will be validated (in reference of the discussion here: [RAG CONTROL FLOW](https://github.com/mistralai/cookbook/tree/main/third_party/langchain)), and this proposed architecture from the paper is a good view of the validator procedure for reducing hallucinations on the response provided.
 
 ![RAG in control](/images/langchain_context/langgraph_adaptive_rag.png)
 
