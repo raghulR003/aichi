@@ -20,13 +20,15 @@ Here is a rough draft of the system I'm proposing:
 
 ![Langchain Concept Architecture](/images/langchain_context/concept_arch.png)
 
-To put it in words, the query being provided by the user, on decomposing into tokens for use by the LLM will be associated with a context token set. Visualize a toffee in your hands, it is of two seperate items: one is the toffee itself that'll be consumed, and the wrapper in which the toffee was encased. Using that analogy, the context tokens are the ones wrapping around the query token here; the decomposed query will be associated with appropriate information which will help us have the response stay in context.
+To put it in words, the query being provided by the user, on decomposing into tokens for use by the LLM will be associated with a context token set. Visualize a toffee in your hands, it is of two seperate items: one is the toffee itself, and the wrapper in which the toffee was encased. Using that analogy, the context tokens are the ones wrapping around the query token here; the decomposed query will be associated with appropriate information which will help us have the response stay in context.
 
-The response will be validated (in reference of the discussion here: [RAG CONTROL FLOW](https://github.com/mistralai/cookbook/tree/main/third_party/langchain)), and this proposed architecture from the paper is a good view of the validator procedure for reducing hallucinations on the response provided.
+The response will be validated (in reference of the discussion here: <u>[RAG CONTROL FLOW](https://github.com/mistralai/cookbook/tree/main/third_party/langchain))</u>, and this proposed architecture from the paper is a good view of the validator procedure for reducing hallucinations on the response provided.
 
 ![RAG in control](/images/langchain_context/langgraph_adaptive_rag.png)
 
-I obviously had to test the system a bit, before I develop instruments to aid me in this task. So I naturally turned to ChatGPT with this task - to establish some metric for identifying conceptual similarities between a query text and context text. This is important because we need to make sure the context text is valid in it's own right, and synchronizes with the response for the query raised with the LLM. The better the context defined, the better responses will be for the query because the LLM simply understands what we are talking about.
+I obviously had to test the current system a bit, before I develop instruments to aid me in this task. So I naturally turned to ChatGPT with this task - to establish some metric for identifying conceptual similarities between a query text and context text. This is important because we need to make sure the context text is valid in it's own right, and synchronizes with the response for the query raised with the LLM. The better the context defined, the better responses will be.
+
+Here is a simulation of a conversation (we call the process as chat completions in LLM-language) between the user and the LLM about the 1990 Paris Olympics, in which the context gracefully towards art and architecture. This type of context switching is a natural process, and our aim is to test out and identify cohesive means to keep track of this switching of fine-context in the conversation.
 
 | Conversation # | User Input                                          | Assistant Response                                                                                                                                                                | Context Information                                                                                                                                                          |
 |-----------------|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -37,7 +39,11 @@ I obviously had to test the system a bit, before I develop instruments to aid me
 | 5               | What other cities saw prominent Art Nouveau architecture? | Brussels had Victor Horta, Vienna had Otto Wagner, and Barcelona showcased Antoni Gaudí’s masterpieces, blending Art Nouveau with Catalan influences.                            | Expansion of Art Nouveau topic; Keywords: Art Nouveau, cities, Victor Horta, Otto Wagner, Antoni Gaudí, architectural innovation.                                           |
 | 6               | Could you connect Gaudí's works to broader cultural movements of the time? | Gaudí’s works were part of the Modernisme movement, a Catalan take on Art Nouveau blending modernity and tradition. His organic designs reflect a deep connection to nature.       | Follow-up on Gaudí’s contributions; Keywords: Gaudí, Modernisme, Art Nouveau, Catalan identity, cultural movements.                                                         |
 
+A good way to keep track of current context amongst the conversation sequence is to maintain the list of keywords, which are the crucial bits of information that define the information as an atomic unit. So instead of using up more tokens in trying to preserve information, we reduce it to almost a singular unit (once again, best use of the allowed context-lengths, our ultimate goal).
 
+Here is a mindmap of the keywords in progression across the conversation sequence, and it's a way of depicting how the context branches throughout the conversation.
+
+![KEYWORD TREE](/images/langchain_context/simulation_keyword_tree.png)
 
 ## References - 
 1. [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/pdf/2307.03172)
